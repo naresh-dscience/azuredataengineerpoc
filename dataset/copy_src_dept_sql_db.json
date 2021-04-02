@@ -1,0 +1,27 @@
+{
+	"name": "copy_src_dept_sql_db",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "dept",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dept_name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dept_data_set"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,32 @@
+{
+	"name": "copy_src_store_sql_db",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Store",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Size",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "stores-data-set"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

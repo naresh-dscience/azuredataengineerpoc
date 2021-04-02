@@ -1,0 +1,41 @@
+{
+	"name": "copy_src_sales_sql_db",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Store",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Dept",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Date",
+				"type": "date"
+			},
+			{
+				"name": "Weekly_Sales",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "IsHoliday",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sales_data_set"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

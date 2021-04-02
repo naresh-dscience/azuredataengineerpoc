@@ -1,0 +1,9 @@
+{
+	"name": "salesdfdev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b92fe860-7979-492c-a844-3234413123f4",
+		"tenantId": "9ba7ba84-790b-4cd5-8586-0f63c23ffc49"
+	}
+}
